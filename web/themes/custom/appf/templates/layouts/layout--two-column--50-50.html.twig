@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Custom layout for Layout-builder.
+ *
+ * @see theme_name.layouts.yml: layout__two_column__50_50
+ * @see https://getbootstrap.com/docs/5.1/layout/grid/
+ */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('lb-layout lb-layout--two-column--50-50 container-fluid') }}>
+    <div class="row">
+
+      <div class="col-12 col-xl-6">
+        {% if content.left %}
+          <div {{ region_attributes.left.addClass('lb-region lb-region--left') }}>
+            {{ content.left }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-12 col-xl-6">
+        {% if content.right %}
+          <div {{ region_attributes.right.addClass('lb-region lb-region--right') }}>
+            {{ content.right }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

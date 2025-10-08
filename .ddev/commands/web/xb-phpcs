@@ -1,0 +1,26 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Check for standards compliance with PHPCS.
+## Usage: xb-phpcs [fix]
+## Example: ddev phpcs      # Check for errors.\nddev phpcs fix  # Fix errors where possible.
+## Aliases: phpcs,cs
+## ExecRaw: false
+## Flags: []
+## AutocompleteTerms: ["fix"]
+
+cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT" || exit 1
+
+COMMAND="phpcs"
+if [[ $1 == "fix" ]]; then
+  COMMAND="phpcbf"
+elif [[ -n $1 ]]; then
+  echo "Invalid argument: $1"
+  exit 1
+fi
+
+"../vendor/bin/$COMMAND" \
+  -s \
+  --standard=modules/contrib/canvas/phpcs.xml \
+  --basepath=modules/contrib/canvas \
+  modules/contrib/canvas

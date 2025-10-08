@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Custom layout for Layout-builder.
+ *
+ * @see theme_name.layouts.yml: layout__card__horizontal
+ * @see https://getbootstrap.com/docs/5.1/layout/grid/
+ */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('lb-layout lb-layout--card--horizontal container-fluid card card-horizontal') }}>
+    <div class="row">
+
+      <div class="col-12 col-xl-3">
+        {% if content.image %}
+          <div {{ region_attributes.image.addClass('lb-region lb-region--image card-image') }}>
+            {{ content.image }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-12 col-xl-9">
+        <div class="card-body col-12 px-xl-4 py-xl-3">
+          {% if content.title %}
+            <div {{ region_attributes.title.addClass('lb-region lb-region--title mb-2 mb-xl-3') }}>
+              {{ content.title }}
+            </div>
+          {% endif %}
+
+          {% if content.body %}
+            <div {{ region_attributes.body.addClass('lb-region lb-region--body') }}>
+              {{ content.body }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

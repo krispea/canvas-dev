@@ -1,0 +1,118 @@
+// Theme variables
+// ================
+@import "theme-variables";
+
+
+// Override bootstrap variables
+// ===============================
+$enable-css-vars: true;
+// Colors.
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "blue":       $m-blue,
+  "red":        $red,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "lighter":    $lighter,
+  "light":      $light,
+  "dark":       $dark,
+  "darker":     $darker,
+  "border":     $border,
+  "dark-yellow": $dark-yellow,
+  "darker-yellow": $darker-yellow
+);
+
+// Units
+$spacer: 1rem;
+
+// Font family
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// Font sizes
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.125; // 18px
+$font-size-sm: $font-size-base * .875; // 14px
+$font-size-xs: $font-size-base * 0.8125; // 13px
+$font-size-xxs: $font-size-base * 0.75; // 12px
+
+$nav-link-font-size: $font-size-sm;
+$h1-font-size: $font-size-base * 2; // 32px
+$h2-font-size: $font-size-base * 1.875; // 30px
+$h3-font-size: $font-size-base * 1.75; // 28px
+$h4-font-size: $font-size-base * 1.5; // 24px
+$h5-font-size: $font-size-base * 1.375; // 22px
+$h6-font-size: $font-size-base * 1.25; // 20px
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $font-size-base,
+  8: $font-size-sm,
+  9: $font-size-xs,
+  10: $font-size-xxs,
+);
+$headings-font-weight: 700;
+
+// Link
+$link-decoration: none;
+
+// Navbar
+$navbar-padding-y: $spacer * .85;
+
+// Border
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  8: 8px,
+  10: 10px
+);
+
+// Spacers
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.125,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 2,
+  8: $spacer * 3,
+);
+
+// Breadcrumb
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'><path d='M6.02322 11.7345C5.96647 11.7891 5.92132 11.8546 5.89048 11.9271C5.85964 11.9996 5.84375 12.0775 5.84375 12.1563C5.84375 12.235 5.85964 12.313 5.89048 12.3855C5.92132 12.458 5.96647 12.5235 6.02322 12.5781C6.0772 12.6329 6.14154 12.6764 6.21249 12.7061C6.28345 12.7358 6.35961 12.7511 6.43653 12.7511C6.51345 12.7511 6.58961 12.7358 6.66057 12.7061C6.73152 12.6764 6.79586 12.6329 6.84984 12.5781L10.5697 8.90822C10.6261 8.85353 10.671 8.78806 10.7017 8.71569C10.7323 8.64332 10.7481 8.56553 10.7481 8.48694C10.7481 8.40834 10.7323 8.33055 10.7017 8.25818C10.671 8.18581 10.6261 8.12034 10.5697 8.06565L6.84984 4.42022C6.62778 4.18222 6.25378 4.19922 6.02322 4.42872C5.9666 4.48341 5.92157 4.54895 5.89082 4.62142C5.86007 4.69389 5.84422 4.7718 5.84422 4.85053C5.84422 4.92925 5.86007 5.00717 5.89082 5.07964C5.92157 5.15211 5.9666 5.21764 6.02322 5.27234L9.30103 8.49065L6.02322 11.7345Z' fill='black'/></svg>");
+$breadcrumb-font-size: $font-size-sm;
+$breadcrumb-item-padding-x: 2rem;
+$breadcrumb-active-color: #1e1e20;
+$breadcrumb-margin-bottom: 0;
+
+// Checkbox
+$input-focus-border-color: $checkbox-color;
+$form-check-input-width: 1.5rem;
+$form-check-padding-start: $form-check-input-width + .5rem;
+$form-check-input-checked-color: $primary;
+$form-check-input-checked-bg-color: $white;
+$form-check-input-checked-border-color: $checkbox-color;
+$form-check-input-border: 1px solid $checkbox-color;
+$form-check-margin-bottom: .5rem;
+$legend-margin-bottom: 1rem;
+$legend-font-size: $font-size-lg;
+$legend-font-weight: 600;
+$accordion-bg: transparent;
+$accordion-icon-width: 1rem;
+$placeholder-opacity-max: .8;

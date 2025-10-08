@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Custom layout for Layout-builder.
+ *
+ * @see theme_name.layouts.yml: layout__three_column__33_33_33
+ * @see https://getbootstrap.com/docs/5.1/layout/grid/
+ */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('lb-layout lb-layout--three-column--33-33-33 container-fluid') }}>
+    <div class="row">
+
+      <div class="col-12 col-xl-4">
+        {% if content.left %}
+          <div {{ region_attributes.left.addClass('lb-region lb-region--left') }}>
+            {{ content.left }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-12 col-xl-4">
+        {% if content.middle %}
+          <div {{ region_attributes.middle.addClass('lb-region lb-region--middle') }}>
+            {{ content.middle }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-12 col-xl-4">
+        {% if content.right %}
+          <div {{ region_attributes.right.addClass('lb-region lb-region--right') }}>
+            {{ content.right }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

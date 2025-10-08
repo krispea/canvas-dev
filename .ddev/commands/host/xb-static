@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Run all static analysis tools.
+## Usage: xb-static
+## Example: ddev static
+## Aliases: static
+## Flags: []
+## ExecRaw: true
+
+echo Running PHPCS...
+ddev xb-phpcs
+
+echo
+echo Running ESLint...
+ddev xb-eslint
+
+echo
+echo Running Stylelint...
+ddev xb-stylelint
+
+echo
+echo Running PHPStan...
+ddev xb-phpstan

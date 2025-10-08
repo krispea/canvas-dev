@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Custom layout for Layout-builder.
+ *
+ * @see theme_name.layouts.yml: layout__card__vertical
+ * @see https://getbootstrap.com/docs/5.1/layout/grid/
+ */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('lb-layout lb-layout--card--vertical container-fluid card card-vertical') }}>
+
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass('lb-region lb-region--image card-image') }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+
+    {% if content.body %}
+      <div {{ region_attributes.body.addClass('lb-region lb-region--body card-body') }}>
+        {{ content.body }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

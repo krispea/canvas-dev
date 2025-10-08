@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Find problems in JavaScript code with ESLint.
+## Usage: xb-eslint [fix]
+## Example: ddev eslint      # Check for errors.\nddev eslint fix  # Fix errors where possible.
+## Aliases: eslint,js
+## ExecRaw: false
+## Flags: []
+## AutocompleteTerms: ["fix"]
+
+cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/canvas/ui" || exit 1
+
+# @todo: Suppress "WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree."
+# @see https://www.drupal.org/project/canvas/issues/3485146
+
+case "$1" in
+  "fix") npm run lint:fix ;;
+  "") npm run lint:eslint ;;
+  *)
+    echo "Invalid argument: $1"
+    exit 1
+    ;;
+esac

@@ -1,0 +1,90 @@
+// Appf custom mixins
+// ==================
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap-variables";
+@import "theme-variables";
+
+// Spacer function key from spacer map.
+@function space($key: 3) {
+  @return map-get($spacers, $key);
+}
+
+@mixin size($width, $height: $width) {
+  $map: (width: $width, height: $height);
+  @include render-map($map);
+}
+
+@mixin include($mixin-name, $mixin-props: ()) {
+  // U can add any mixin as follows.
+  @if $mixin-name == "flex" {
+    @include flex($mixin-props...);
+  } @else if $mixin-name == "size" {
+    @include size($mixin-props...);
+  } @else {
+    @warn "'#{$mixin-name}'";
+  }
+}
+
+@mixin flex($direction: row, $align-items: null, $justify-content: null, $flex-wrap: null, $flex-inline: false) {
+  $map: (flex-direction: $direction, align-items: $align-items, justify-content: $justify-content, flex-wrap: $flex-wrap);
+  @include render-map($map);
+
+  display: if($flex-inline, inline-flex, flex);
+}
+
+@mixin render-map($map) {
+  @each $k, $v in $map {
+    @if map-has-key($grid-breakpoints, $k) and type-of($v) == "map" {
+      @include media-breakpoint-up($k) {
+        @include render-map($v);
+      }
+    } @else if $k == "include" {
+      @each $kk, $vv in $v {
+        @include include($kk, $vv);
+      }
+    } @else if $v != "null" {
+      #{$k}: #{$v};
+    } @else {
+      @warn "Not valid input value pair --- '#{$k}': '#{$v}'";
+    }
+  }
+}
+
+@mixin make-eq-col() {
+  flex: 1 0 0%;
+}
+
+@mixin before-icon($icon) {
+  @include flex(row, center);
+
+  &::before {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: space(2);
+    content: "";
+    background-image: url("../../assets/#{$icon}.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.5rem 1.5rem;
+  }
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+@mixin container-fluid() {
+  @include make-container;
+}
+
+@mixin container() {
+  @include make-container;
+  @include make-container-max-widths;
+}

@@ -1,0 +1,63 @@
+// Appf custom variables
+// ======================
+$white: #fff;
+$black: #000;
+$green: #00b262;
+$dark: #363636;
+$darker: #212529;
+$red: #ad0c02;
+$yellow: #fff3cd;
+$dark-yellow: #ffecb5;
+$darker-yellow: #664d03;
+$light: #d6d7d9;
+$lighter: #fafafa;
+$blue: #1c1f66;
+$m-blue: #0232ad;
+$d-blue: #191a38;
+$nav-link-primary: #1c1f66;
+$nav-link-secondary: #fff;
+$nav-link-third: #000;
+$border: #d9d9d9;
+$date: #353535;
+$text-transform: uppercase;
+$underline: underline;
+$primary: $blue;
+$secondary: $green;
+$success: $green;
+$info: $blue;
+$warning: $yellow;
+$danger: $red;
+$checkbox-color: $dark;
+
+// Colors
+:root {
+    --bs-primary: #{$primary};
+    --bs-secondary: #{$secondary};
+    --bs-success: #{$success};
+    --bs-info: #{$info};
+    --bs-warning: #{$warning};
+    --bs-danger: #{$danger};
+    --bs-lighter: #{$lighter};
+    --bs-light: #{$light};
+    --bs-white: #{$white};
+    --bs-black: #{$black};
+    --bs-green: #{$green};
+    --bs-dark: #{$dark};
+    --bs-darker: #{$darker};
+    --bs-light: #{$light};
+    --bs-red: #{$red};
+    --bs-yellow: #{$yellow};
+    --bs-dark-yellow: #{$dark-yellow};
+    --bs-darker-yellow: #{$darker-yellow};
+    --bs-light: #{$light};
+    --bs-lighter: #{$lighter};
+    --bs-blue: #{$blue};
+    --bs-m-blue: #{$m-blue};
+    --bs-d-blue: #{$d-blue};
+    --bs-nav-link-primary: #{$nav-link-primary};
+    --bs-nav-link-secondary: #{$nav-link-secondary};
+    --bs-nav-link-third: #{$nav-link-third};
+    --bs-border: #{$border};
+    --bs-date: #{$date};
+    --bs-checkbox-color: #{$checkbox-color};
+}

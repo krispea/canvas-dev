@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Custom layout for Layout-builder.
+ *
+ * @see theme_name.layouts.yml: layout__one_column__fluid
+ * @see https://getbootstrap.com/docs/5.1/layout/grid/
+ */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('lb-layout lb-layout--one-column--fluid container-fluid') }}>
+    <div class="row">
+      {% if content.main %}
+        <div {{ region_attributes.main.addClass('lb-region lb-region--main col-12') }}>
+          {{ content.main }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

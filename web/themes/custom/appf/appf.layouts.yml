@@ -1,0 +1,110 @@
+##
+# ---------------------------------
+# Layout-builder layout definitions
+# ---------------------------------
+##
+layout__one_column__fluid:
+  label: 'App - One column, fluid'
+  category: 'Columns: 1'
+  template: templates/layouts/layout--one-column--fluid
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content (100%) (fluid)
+
+layout__one_column__contained:
+  label: 'App - One column, contained'
+  category: 'Columns: 1'
+  template: templates/layouts/layout--one-column--contained
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content (100%) (contained)
+
+layout__two_column__50_50:
+  label: 'App - Two columns, 50/50'
+  template: templates/layouts/layout--two-column--50-50
+  category: 'Columns: 2'
+  default_region: left
+  icon_map:
+    - [left, right]
+  regions:
+    left:
+      label: Left column (50%)
+    right:
+      label: Right column (50%)
+
+layout__two_column__25_75:
+  label: 'App - Two columns, 25/75'
+  category: 'Columns: 2'
+  template: templates/layouts/layout--two-column--25-75
+  default_region: left
+  icon_map:
+    - [left, right, right, right]
+  regions:
+    left:
+      label: Left column (25%)
+    right:
+      label: Right column (75%)
+
+layout__two_column__75_25:
+  label: 'App - Two columns, 75/25'
+  category: 'Columns: 2'
+  template: templates/layouts/layout--two-column--75-25
+  default_region: left
+  icon_map:
+    - [left, left, left, right]
+  regions:
+    left:
+      label: Left column (75%)
+    right:
+      label: Right column (25%)
+
+layout__three_column__33_33_33:
+  label: 'App - Three column, 33/33/33'
+  category: 'Columns: 3'
+  template: templates/layouts/layout--three-column--33-33-33
+  default_region: left
+  icon_map:
+    - [left, middle, right]
+  regions:
+    left:
+      label: Left column (33%)
+    middle:
+      label: Middle column (33%)
+    right:
+      label: Right column (33%)
+
+layout__card__vertical:
+  label: 'App - Card, vertical'
+  category: 'Columns: 1'
+  template: templates/layouts/layout--card--vertical
+  default_region: body
+  icon_map:
+    - [image]
+    - [body]
+  regions:
+    image:
+      label: Image
+    body:
+      label: Body
+
+layout__card__horizontal:
+  label: 'App - Card, horizontal'
+  category: 'Columns: 2'
+  template: templates/layouts/layout--card--horizontal
+  default_region: body
+  icon_map:
+    - [image, title]
+    - [body]
+  regions:
+    image:
+      label: Image
+    title:
+      label: Title
+    body:
+      label: Body

@@ -1,0 +1,16 @@
+// Global Defaults
+// ================
+
+@import "../node_modules/bootstrap/scss/mixins/banner";
+@import "bootstrap-variables"; // Override bootstrap 5 variables.
+@import "theme-variables"; // Theme variables.
+@import "../node_modules/bootstrap/scss/functions"; // Bootstrap functions.
+@import "../node_modules/bootstrap/scss/variables"; // Bootstrap variables.
+@import "../node_modules/bootstrap/scss/variables-dark"; // Bootstrap variables dark.
+@import "../node_modules/bootstrap/scss/maps"; // Bootstrap maps.
+@import "../node_modules/bootstrap/scss/mixins"; // Bootstrap mixins.
+@import "../node_modules/bootstrap/scss/utilities"; // Bootstrap utilities.
+@import "theme-mixins"; // Theme mixins.
+@import "theme-utilites"; // Theme utilities.
+
+@include bsBanner("");

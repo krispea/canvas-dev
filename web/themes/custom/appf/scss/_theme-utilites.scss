@@ -1,0 +1,13 @@
+.row-eq-height {
+  [class*="col-"] {
+    flex-grow: 1;
+
+    article {
+      height: 100%;
+    }
+  }
+}
+
+.placeholder {
+  background-color: transparent;
+}
