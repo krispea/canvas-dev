@@ -46,6 +46,9 @@ yarn-error.log
 *.sass-cache/
 .sass-cache/
 
+# Ignore cache directories
+.cache/
+
 # Ignore Composer lock (optional - uncomment if you want to ignore it)
 # composer.lock
 

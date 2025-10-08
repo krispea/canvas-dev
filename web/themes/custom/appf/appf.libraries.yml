@@ -9,7 +9,7 @@ framework:
 # Bootstrap 5 global styles library.
 bootstrap-styles:
   css:
-    base:
+    theme:
       css/base/bootstrap.base.css: {}
 
 # Bootstrap 5 global scripts library.
@@ -23,7 +23,7 @@ bootstrap-scripts:
 
 global-styles:
   css:
-    base:
+    theme:
       css/base/theme.base.css: {}
 
 global-scripts:
