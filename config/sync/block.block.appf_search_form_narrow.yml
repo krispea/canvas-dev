@@ -1,0 +1,23 @@
+uuid: 42378373-1e8e-46ad-8c05-9c83bc5c3218
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - appf
+_core:
+  default_config_hash: _nZjxxdypO6xrOAJkCYD81v0L7wh2zbCAVO7_C-UKIc
+id: appf_search_form_narrow
+theme: appf
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

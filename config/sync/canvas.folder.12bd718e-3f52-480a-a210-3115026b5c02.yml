@@ -1,0 +1,14 @@
+uuid: 12bd718e-3f52-480a-a210-3115026b5c02
+langcode: en
+status: true
+dependencies: {  }
+name: Atoms
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.appf.button
+  - sdc.appf.heading
+  - sdc.appf.icon
+  - sdc.appf.image
+  - sdc.appf.link
+  - sdc.appf.paragraph

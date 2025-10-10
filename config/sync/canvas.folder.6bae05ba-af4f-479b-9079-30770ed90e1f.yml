@@ -1,0 +1,13 @@
+uuid: 6bae05ba-af4f-479b-9079-30770ed90e1f
+langcode: en
+status: true
+dependencies: {  }
+name: Layout
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.appf.flex-container
+  - sdc.appf.four-column-container
+  - sdc.appf.one-column-container
+  - sdc.appf.three-column-container
+  - sdc.appf.two-column-container

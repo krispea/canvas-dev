@@ -1,0 +1,40 @@
+uuid: 628aeb0c-9a6e-4811-8111-7b91fcfe5d2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.help_block
+    - canvas.component.block.local_actions_block
+    - canvas.component.block.local_tasks_block
+    - canvas.component.block.system_messages_block
+  theme:
+    - appf
+id: appf.header
+region: header
+theme: appf
+component_tree:
+  -
+    uuid: b3f54e84-975e-4674-8616-eca772923b0d
+    component_id: block.help_block
+    component_version: 620979b5a309a407
+    inputs: '{"label":"Help","label_display":"0"}'
+  -
+    uuid: 08b58a58-f139-4956-bf47-c0738d00e9db
+    component_id: block.system_messages_block
+    component_version: b92f802cf68eb83e
+    inputs: '{"label":"Status messages","label_display":"0"}'
+  -
+    uuid: a3694d81-efb0-4502-9631-3001ca7a7494
+    component_id: block.local_actions_block
+    component_version: 5400750e38fff980
+    inputs: '{"label":"Primary admin actions","label_display":"0"}'
+  -
+    uuid: b6adf0fd-6442-4e20-ab27-309e8bb863a2
+    component_id: block.local_tasks_block
+    component_version: 7ce07cbe2a7fa7ce
+    inputs: '{"label":"Primary tabs","label_display":"0","primary":true,"secondary":false}'
+  -
+    uuid: 8d02bb06-5ed0-4f37-9878-5889e98b4028
+    component_id: block.local_tasks_block
+    component_version: 7ce07cbe2a7fa7ce
+    inputs: '{"label":"Secondary tabs","label_display":"0","primary":false,"secondary":true}'

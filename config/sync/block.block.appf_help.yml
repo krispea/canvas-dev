@@ -1,0 +1,22 @@
+uuid: b3f54e84-975e-4674-8616-eca772923b0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - appf
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: appf_help
+theme: appf
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

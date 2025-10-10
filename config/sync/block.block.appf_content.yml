@@ -1,0 +1,22 @@
+uuid: 3899c954-4584-4a8d-84fd-d8d72c15218b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - appf
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: appf_content
+theme: appf
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

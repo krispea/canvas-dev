@@ -1,0 +1,17 @@
+//
+// @File
+// Main navigation theming.
+//
+
+ul.menu.menu--main {
+    @include list-unstyled();
+
+    li.menu-item {
+        @include list-unstyled();
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

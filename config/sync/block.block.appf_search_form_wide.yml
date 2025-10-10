@@ -1,0 +1,23 @@
+uuid: 61fafcb1-738f-40e4-9146-32919469e8b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - appf
+_core:
+  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
+id: appf_search_form_wide
+theme: appf
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

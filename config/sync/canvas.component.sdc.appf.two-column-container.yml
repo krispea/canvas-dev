@@ -1,0 +1,164 @@
+uuid: 61efea47-dcc5-452b-9287-5838746cbfa6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - appf
+active_version: cb52b362795c887e
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        alignItems:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: align-items-start
+          expression: ℹ︎list_string␟value
+        containerType:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: container
+          expression: ℹ︎list_string␟value
+        customClasses:
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        gutters:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: g-3
+          expression: ℹ︎list_string␟value
+        layout:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: equal
+          expression: ℹ︎list_string␟value
+        stackBreakpoint:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: md
+          expression: ℹ︎list_string␟value
+        verticalPadding:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: py-3
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        leftColumn:
+          title: 'Left Column'
+          description: 'Content for the left column'
+        rightColumn:
+          title: 'Right Column'
+          description: 'Content for the right column'
+  b96bb45b49a63401:
+    settings:
+      prop_field_definitions:
+        alignItems:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: align-items-start
+          expression: ℹ︎list_string␟value
+        containerType:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: container
+          expression: ℹ︎list_string␟value
+        customClasses:
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        gutters:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: g-3
+          expression: ℹ︎list_string␟value
+        layout:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: equal
+          expression: ℹ︎list_string␟value
+        stackBreakpoint:
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: md
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        leftColumn:
+          title: 'Left Column'
+          description: 'Content for the left column'
+        rightColumn:
+          title: 'Right Column'
+          description: 'Content for the right column'
+label: 'Two Column Container'
+id: sdc.appf.two-column-container
+provider: appf
+source: sdc
+source_local_id: 'appf:two-column-container'
+category: Layout

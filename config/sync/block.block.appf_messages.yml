@@ -1,0 +1,22 @@
+uuid: 08b58a58-f139-4956-bf47-c0738d00e9db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - appf
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: appf_messages
+theme: appf
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

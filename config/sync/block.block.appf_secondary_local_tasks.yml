@@ -1,0 +1,22 @@
+uuid: 8d02bb06-5ed0-4f37-9878-5889e98b4028
+langcode: en
+status: true
+dependencies:
+  theme:
+    - appf
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: appf_secondary_local_tasks
+theme: appf
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
