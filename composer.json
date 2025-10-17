@@ -23,7 +23,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.6",
         "drupal/admin_toolbar_tools": "^3.6",
-        "drupal/canvas": "^1.0@beta",
+        "drupal/canvas": "^1.0@RC",
         "drupal/coffee": "^2.0",
         "drupal/components": "^3.1",
         "drupal/core-composer-scaffold": "^11",
@@ -66,6 +66,9 @@
         "patches": {
             "drupal/core": {
                 "Fix TypeError when rendering null text in FormattableMarkup": "https://www.drupal.org/files/issues/2025-07-11/fix-type-error-null-text-3523317-21.patch"
+            },
+            "drupal/canvas": {
+                "Fix multi-value array fields losing data - transforms.ts uses destructive shift/pop": "patches/canvas-fix-array-multivalue-fields.patch"
             }
         },
         "drupal-scaffold": {

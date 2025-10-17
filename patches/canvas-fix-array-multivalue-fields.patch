@@ -1,0 +1,38 @@
+diff --git a/ui/src/utils/transforms.ts b/ui/src/utils/transforms.ts
+index 1111111..2222222 100644
+--- a/ui/src/utils/transforms.ts
++++ b/ui/src/utils/transforms.ts
+@@ -39,19 +39,27 @@ const isList = (
+ const mainProperty: Transformer<{
+   name?: keyof PropsValues;
+   list?: boolean;
+ }> = (value, options): any => {
+   if (value === null) {
+     return null;
+   }
+   const { name = 'value', list = true } = options;
+-  let first = value as PropsValues;
++
++  // Handle arrays: map over all items, not just the first
+   if (isList(value, list)) {
+     if (value.length === 0) {
+       return null;
+     }
+-    first = value.shift() as PropsValues;
++    // Map over all items to extract the property from each
++    return value.map((item) => {
++      if (item && name in item) {
++        return item[name];
++      }
++      return null;
++    }).filter((v) => v !== null);
+   }
+-  if (first && name in first) {
+-    return first[name];
++
++  // Handle single values
++  if (value && name in value) {
++    return value[name];
+   }
+   return null;
+ };

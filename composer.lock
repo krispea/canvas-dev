@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86b51d77a875d3f4dfc1144517be3792",
+    "content-hash": "cb1424ae7c0f9def5138ab6e00fb36bd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1287,17 +1287,17 @@
         },
         {
             "name": "drupal/canvas",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/canvas.git",
-                "reference": "1.0.0-beta1"
+                "reference": "1.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/canvas-1.0.0-beta1.zip",
-                "reference": "1.0.0-beta1",
-                "shasum": "dc760915d21973485c3b4bbc6a62a1ae94ce5d13"
+                "url": "https://ftp.drupal.org/files/projects/canvas-1.0.0-rc1.zip",
+                "reference": "1.0.0-rc1",
+                "shasum": "8c1ff0b0279ee2656afe6233982fb86fd5ee000d"
             },
             "require": {
                 "drupal/core": "^11.2",
@@ -1319,24 +1319,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-beta1",
-                    "datestamp": "1759408338",
+                    "version": "1.0.0-rc1",
+                    "datestamp": "1760137380",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\renamer\\Rename\\": "scripts/src"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "scripts": {
-                "rename": [
-                    "Drupal\\renamer\\Rename\\ConverterCommand"
-                ],
                 "composer-root": [
                     "d=.; i=0; while [ $i -lt 10 ]; do if [ -f \"$d/composer.json\" ] && cat \"$d/composer.json\" | grep -q '\"type\"' && cat \"$d/composer.json\" | grep -q '\"project\"'; then readlink -f \"$d\"; break; fi; d=\"../$d\"; i=$((i+1)); done"
                 ],
@@ -12796,7 +12788,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/canvas": 10,
+        "drupal/canvas": 5,
         "drupal/webform": 20,
         "drupal/wse": 20,
         "drupal/wse_config": 20,

@@ -15,19 +15,12 @@ module.exports = {
     // SCSS
     // ################################################
     // Components
-    //'atoms/icon/icon': ['./components/atoms/icon/icon.scss'],
-    // 'atoms/select/select': ['./components/atoms/select/select.scss'],
-    // 'molecules/alert/alert': ['./components/molecules/alert/alert.scss'],
-    // 'molecules/tabs/tabs': ['./components/molecules/tabs/tabs.scss'],
-    // 'molecules/breadcrumb/breadcrumb': ['./components/molecules/breadcrumb/breadcrumb.scss'],
-    // 'organisms/nav/nav': ['./components/organisms/nav/nav.scss'],
-    // 'organisms/navbar/navbar': ['./components/organisms/navbar/navbar.scss'],
-    // 'organisms/paragraph/paragraph': ['./components/organisms/paragraph/paragraph.scss'],
-    // 'organisms/views-exposed-form/views-exposed-form': ['./components/organisms/views-exposed-form/views-exposed-form.scss'],
-    // 'organisms/views-view/views-view': ['./components/organisms/views-view/views-view.scss'],
-    // 'organisms/views-view-table/views-view-table': ['./components/organisms/views-view-table/views-view-table.scss'],
-    // 'organisms/paragraph--card/paragraph--card': ['./components/organisms/paragraph--card/paragraph--card.scss'],
-    // 'organisms/page-footer/page-footer': ['./components/organisms/page-footer/page-footer.scss']
+    'atoms/icon/icon': ['./components/atoms/icon/icon.scss'],
+    'atoms/divider/divider': ['./components/atoms/divider/divider.scss'],
+    'atoms/blockquote/blockquote': ['./components/atoms/blockquote/blockquote.scss'],
+    'atoms/badge/badge': ['./components/atoms/badge/badge.scss'],
+    'atoms/video/video': ['./components/atoms/video/video.scss'],
+    'atoms/unordered-list/unordered-list': ['./components/atoms/unordered-list/unordered-list.scss']
   },
   output: {
     path: path.resolve(__dirname, 'components'),
