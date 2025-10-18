@@ -82,6 +82,13 @@ export default {
     'mb-auto',
     'mt-0',
     'mb-0',
+    // Heading font sizes (h1-h6)
+    'text-5xl',
+    'text-4xl',
+    'text-3xl',
+    'text-2xl',
+    'text-xl',
+    'text-lg',
   ],
   theme: {
     extend: {
