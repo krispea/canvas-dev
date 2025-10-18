@@ -1,0 +1,22 @@
+name: 'APP_LABEL - Frontend Theme (Bootstrap)'
+description: 'Frontend theme based on Bootstrap 5 (Legacy)'
+base theme: 'claro'
+core_version_requirement: ^10.2 || ^11
+type: 'theme'
+
+# https://www.drupal.org/docs/theming-drupal/sub-theme-inheritance
+# https://www.drupal.org/node/2469113#default_regions
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+
+libraries:
+  - 'appf_bs/framework'
+
+libraries-override:
+  core/normalize: false
+  classy/base: false
+
+ckeditor_stylesheets:
+  - 'dist/css/_drupal/ck-editor/ck-editor.min.css'

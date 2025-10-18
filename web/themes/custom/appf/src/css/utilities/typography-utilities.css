@@ -1,0 +1,45 @@
+/**
+ * Typography utility classes using Tailwind @apply
+ *
+ * Text and background color combination utilities.
+ * These create cohesive text/background pairings for badges, alerts, etc.
+ */
+
+@layer utilities {
+  /* ============================================
+     TEXT-BG COLOR UTILITIES
+     Solid background with contrasting text
+     ============================================ */
+
+  .text-bg-primary {
+    @apply bg-primary text-white;
+  }
+
+  .text-bg-secondary {
+    @apply bg-secondary text-gray-900;
+  }
+
+  .text-bg-success {
+    @apply bg-green-500 text-white;
+  }
+
+  .text-bg-danger {
+    @apply bg-red-500 text-white;
+  }
+
+  .text-bg-warning {
+    @apply bg-yellow-500 text-gray-900;
+  }
+
+  .text-bg-info {
+    @apply bg-blue-500 text-white;
+  }
+
+  .text-bg-light {
+    @apply bg-gray-100 text-gray-900;
+  }
+
+  .text-bg-dark {
+    @apply bg-gray-800 text-white;
+  }
+}

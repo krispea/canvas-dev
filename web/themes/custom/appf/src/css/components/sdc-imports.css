@@ -1,0 +1,63 @@
+/**
+ * @file
+ * SDC Component CSS Imports
+ *
+ * This file imports CSS from components that use @apply directives.
+ * Simple components that use only utility classes don't need imports.
+ *
+ * How to add new components:
+ * 1. Create component.css with @apply directives
+ * 2. Add @import here
+ * 3. Run `yarn build` to compile
+ */
+
+/* ============================================
+   ATOMS - Import complex atomic components
+   ============================================ */
+
+/* badge - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+@import '../../../components/atoms/blockquote/blockquote.css';
+/* button - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* divider - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* heading - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* icon - Uses Heroicons SVG with Tailwind utilities in Twig (no CSS needed) */
+/* image - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* link - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* ordered-list - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* paragraph - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* unordered-list - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* video - Uses 100% Tailwind utilities with Heroicons SVG in Twig (no CSS needed) */
+/* @import '../../../components/atoms/input/input.css'; */
+/* @import '../../../components/atoms/select/select.css'; */
+/* @import '../../../components/atoms/textarea/textarea.css'; */
+
+/* ============================================
+   MOLECULES - Import complex molecular components
+   ============================================ */
+
+/* @import '../../../components/molecules/card/card.css'; */
+/* @import '../../../components/molecules/alert/alert.css'; */
+/* @import '../../../components/molecules/accordion/accordion.css'; */
+
+/* ============================================
+   LAYOUT - Import layout components
+   ============================================ */
+
+/* flex-container - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* four-column-container - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* one-column-container - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* three-column-container - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+/* two-column-container - Uses 100% Tailwind utilities in Twig (no CSS needed) */
+
+/* ============================================
+   ORGANISMS - Import complex organism components
+   ============================================ */
+
+/* Add organism imports here when needed */
+
+/**
+ * Note: Components commented out above are using utility classes directly
+ * in their Twig templates and don't need CSS imports.
+ *
+ * Uncomment when you convert them to use @apply approach.
+ */

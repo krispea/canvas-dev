@@ -1,42 +1,10 @@
-framework:
-  dependencies:
-    - appf/fontawesome
-    - appf/bootstrap-styles
-    - appf/bootstrap-scripts
-    - appf/global-styles
-    - appf/global-scripts
-
-# Bootstrap 5 global styles library.
-bootstrap-styles:
+global:
+  version: 1.0.0
   css:
     theme:
-      css/base/bootstrap.base.css: {}
-
-# Bootstrap 5 global scripts library.
-bootstrap-scripts:
+      dist/css/style.css: {}
+  js:
+    dist/js/main.js: {}
   dependencies:
     - core/drupal
-    - core/jquery
-  js:
-    js/popperjs/popper.js: {}
-    js/bootstrap/bootstrap.min.js: {}
-
-global-styles:
-  css:
-    theme:
-      css/base/theme.base.css: {}
-
-global-scripts:
-  js:
-    js/main.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
     - core/once
-
-# Font Awesome free icons.
-fontawesome:
-  css:
-    theme:
-      fonts/fontawesome-free/stylesheet/all.css: {}
-

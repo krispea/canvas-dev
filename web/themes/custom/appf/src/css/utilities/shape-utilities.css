@@ -1,0 +1,16 @@
+/**
+ * Shape utility classes using Tailwind @apply
+ *
+ * Reusable shape and border utilities for components.
+ */
+
+@layer utilities {
+  /* ============================================
+     ROUNDED UTILITIES
+     ============================================ */
+
+  /* Rounded pill (fully rounded ends) - commonly used in badges, pills, tags */
+  .rounded-pill {
+    @apply rounded-full;
+  }
+}

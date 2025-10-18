@@ -1,0 +1,64 @@
+/**
+ * @file
+ * Main CSS entry point for APPF theme.
+ * This file uses Tailwind CSS directives and custom styles.
+ */
+
+/* ============================================
+   CSS IMPORTS
+   All @import statements must come first
+   ============================================ */
+@import './components/sdc-imports.css';
+@import './utilities/typography-utilities.css';
+@import './utilities/shape-utilities.css';
+
+/* Tailwind CSS Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Custom Component Styles */
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary-600 focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Drupal-specific overrides */
+.visually-hidden {
+  @apply sr-only;
+}
