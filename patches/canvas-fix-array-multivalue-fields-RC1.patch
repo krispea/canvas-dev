@@ -1,13 +1,6 @@
-diff --git a/ui/src/utils/transforms.ts b/ui/src/utils/transforms.ts
-index 1111111..2222222 100644
---- a/ui/src/utils/transforms.ts
-+++ b/ui/src/utils/transforms.ts
-@@ -39,19 +39,27 @@ const isList = (
- const mainProperty: Transformer<{
-   name?: keyof PropsValues;
-   list?: boolean;
- }> = (value, options): any => {
-   if (value === null) {
+--- a/ui/src/utils/transforms.ts	2025-10-20 09:57:45
++++ b/ui/src/utils/transforms.ts	2025-10-20 09:58:32
+@@ -44,15 +44,24 @@
      return null;
    }
    const { name = 'value', list = true } = options;
