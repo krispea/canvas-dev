@@ -42,4 +42,12 @@
   .text-bg-dark {
     @apply bg-gray-800 text-white;
   }
+
+  .text-bg-white {
+    @apply bg-white text-gray-900;
+  }
+
+  .text-bg-black {
+    @apply bg-black text-white;
+  }
 }
