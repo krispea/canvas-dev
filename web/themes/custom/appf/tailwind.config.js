@@ -6,7 +6,31 @@ export default {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   safelist: [
-    // Text-bg utilities (used dynamically in badge component)
+    // Pattern-based safelist for color component (supports all shades 50-900)
+    // This protects dynamically generated classes from purging
+    {
+      pattern: /^(text|bg|border)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    // Special colors (primary, secondary, white, black, light, dark)
+    'text-primary',
+    'text-secondary',
+    'text-white',
+    'text-black',
+    'text-gray-300', // light
+    'text-gray-800', // dark
+    'bg-primary',
+    'bg-secondary',
+    'bg-white',
+    'bg-black',
+    'bg-gray-300', // light
+    'bg-gray-800', // dark
+    'border-primary',
+    'border-secondary',
+    'border-white',
+    'border-black',
+    'border-gray-300', // light
+    'border-gray-800', // dark
+    // Text-bg utilities (old Bootstrap-style, keeping for compatibility)
     'text-bg-primary',
     'text-bg-secondary',
     'text-bg-success',
@@ -88,6 +112,13 @@ export default {
     'mb-auto',
     'mt-0',
     'mb-0',
+    // Component spacing utilities (used in spacing prop)
+    'mt-6',
+    'mr-6',
+    'mb-6',
+    'ml-6',
+    'my-6',
+    'mx-6',
     // Heading font sizes (h1-h6)
     'text-5xl',
     'text-4xl',
@@ -113,19 +144,24 @@ export default {
     'space-x-6',
     'space-x-8',
     'space-x-10',
-    // Ordered list marker colors
+    // Ordered list marker colors (pattern-based for all shades)
+    {
+      pattern: /^marker:text-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)-(50|100|200|300|400|500|600|700|800|900)$/,
+      variants: ['marker'],
+    },
     'marker:text-primary',
     'marker:text-secondary',
-    'marker:text-green-600',
-    'marker:text-red-600',
-    'marker:text-yellow-500',
-    'marker:text-blue-500',
-    'marker:text-gray-300',
-    'marker:text-gray-900',
-    'marker:text-gray-800',
-    'marker:text-gray-500',
     'marker:text-white',
     'marker:text-black',
+    'marker:text-gray-300', // light
+    'marker:text-gray-800', // dark
+    // Opacity backgrounds for video components
+    'bg-black/60',
+    'bg-black/80',
+    'bg-white/60',
+    'bg-white/80',
+    'hover:bg-black/80',
+    'hover:bg-white/80',
   ],
   theme: {
     extend: {
