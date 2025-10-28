@@ -11,24 +11,27 @@ export default {
     {
       pattern: /^(text|bg|border)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|slate|gray|zinc|neutral|stone)-(50|100|200|300|400|500|600|700|800|900)$/,
     },
-    // Special colors (primary, secondary, white, black, light, dark)
+    // Simplified 7-color palette
     'text-primary',
     'text-secondary',
+    'text-tertiary',
     'text-white',
     'text-black',
-    'text-gray-300', // light
+    'text-gray-600', // light
     'text-gray-800', // dark
     'bg-primary',
     'bg-secondary',
+    'bg-tertiary',
     'bg-white',
     'bg-black',
-    'bg-gray-300', // light
+    'bg-gray-200', // light
     'bg-gray-800', // dark
     'border-primary',
     'border-secondary',
+    'border-tertiary',
     'border-white',
     'border-black',
-    'border-gray-300', // light
+    'border-gray-300', // light/white border
     'border-gray-800', // dark
     // Text-bg utilities (old Bootstrap-style, keeping for compatibility)
     'text-bg-primary',
@@ -90,6 +93,82 @@ export default {
     'border-dashed',
     'border-dotted',
     'border-double',
+    // Divider thickness
+    'border-t',
+    'border-t-2',
+    'border-t-4',
+    'border-t-6',
+    'border-l',
+    'border-l-2',
+    'border-l-4',
+    'border-l-6',
+    // Gradient divider
+    'bg-gradient-to-r',
+    'bg-gradient-to-b',
+    'from-primary',
+    'to-secondary',
+    'h-px',
+    'h-1',
+    'h-1.5',
+    'w-px',
+    'w-1',
+    'w-1.5',
+    'min-h-4',
+    'align-middle',
+    // Grid col-span classes (used in two-column, three-column, four-column containers)
+    'col-span-1',
+    'col-span-2',
+    'col-span-3',
+    'col-span-4',
+    'col-span-6',
+    'col-span-8',
+    'col-span-9',
+    'sm:col-span-1',
+    'sm:col-span-2',
+    'sm:col-span-3',
+    'sm:col-span-4',
+    'sm:col-span-6',
+    'sm:col-span-8',
+    'sm:col-span-9',
+    'md:col-span-1',
+    'md:col-span-2',
+    'md:col-span-3',
+    'md:col-span-4',
+    'md:col-span-6',
+    'md:col-span-8',
+    'md:col-span-9',
+    'lg:col-span-1',
+    'lg:col-span-2',
+    'lg:col-span-3',
+    'lg:col-span-4',
+    'lg:col-span-6',
+    'lg:col-span-8',
+    'lg:col-span-9',
+    // Grid cols classes (used in container layouts)
+    'sm:grid-cols-3',
+    'sm:grid-cols-4',
+    'sm:grid-cols-12',
+    'md:grid-cols-3',
+    'md:grid-cols-4',
+    'md:grid-cols-12',
+    'lg:grid-cols-3',
+    'lg:grid-cols-4',
+    'lg:grid-cols-12',
+    // Hero padding classes (large vertical padding)
+    'py-32',
+    'py-40',
+    'py-48',
+    'py-56',
+    'py-64',
+    'py-72',
+    'sm:py-40',
+    'sm:py-48',
+    'sm:py-56',
+    'sm:py-64',
+    'sm:py-72',
+    'lg:py-56',
+    'lg:py-64',
+    'lg:py-72',
     // Divider colors
     'border-gray-200',
     'border-gray-300',
@@ -119,6 +198,16 @@ export default {
     'ml-6',
     'my-6',
     'mx-6',
+    // Card variant classes
+    'bg-gray-900',
+    'text-gray-900',
+    'rounded-3xl',
+    'border-2',
+    'border-primary',
+    'bg-primary',
+    'bg-secondary',
+    'hover:shadow-xl',
+    'hover:-translate-y-1',
     // Heading font sizes (h1-h6)
     'text-5xl',
     'text-4xl',
@@ -166,7 +255,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Cheppers brand colors
+        // Brand colors
         primary: {
           DEFAULT: '#20b9f5',
           50: '#e8f8fe',
@@ -193,6 +282,26 @@ export default {
           800: '#0b654c',
           900: '#053226',
         },
+        tertiary: {
+          DEFAULT: '#773cf5',
+          50: '#f3ecfe',
+          100: '#e7d9fd',
+          200: '#cfb3fb',
+          300: '#b78df9',
+          400: '#9f67f7',
+          500: '#773cf5',
+          600: '#5f30c4',
+          700: '#472493',
+          800: '#301862',
+          900: '#180c31',
+        },
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0px',
+        '2': '2px',
+        '4': '4px',
+        '6': '6px',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
