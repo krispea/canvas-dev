@@ -151,9 +151,23 @@ export default {
     'md:grid-cols-3',
     'md:grid-cols-4',
     'md:grid-cols-12',
+    'lg:grid-cols-2',
     'lg:grid-cols-3',
     'lg:grid-cols-4',
     'lg:grid-cols-12',
+    // Grid order classes (used in hero-image for image positioning)
+    'lg:order-1',
+    'lg:order-2',
+    // CTA padding classes (smaller vertical padding)
+    'py-8',
+    'py-12',
+    'py-16',
+    'py-20',
+    'py-24',
+    'sm:py-12',
+    'sm:py-16',
+    'sm:py-20',
+    'sm:py-24',
     // Hero padding classes (large vertical padding)
     'py-32',
     'py-40',
