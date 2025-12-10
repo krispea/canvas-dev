@@ -6,14 +6,10 @@ dependencies:
     - canvas.component.block.help_block
     - canvas.component.block.local_actions_block
     - canvas.component.block.local_tasks_block
-    - canvas.component.block.page_title_block
-    - canvas.component.block.search_form_block
-    - canvas.component.block.system_branding_block
-    - canvas.component.block.system_breadcrumb_block
-    - canvas.component.block.system_menu_block.account
-    - canvas.component.block.system_menu_block.main
     - canvas.component.block.system_messages_block
-    - canvas.component.block.system_powered_by_block
+    - canvas.component.sdc.internal_sdc.header-basic
+  module:
+    - options
   theme:
     - appf
 id: appf.header
@@ -21,108 +17,32 @@ region: header
 theme: appf
 component_tree:
   -
-    uuid: 0d8ab28e-76b1-47ec-b479-c9a6488f6f33
-    component_id: block.system_menu_block.account
-    component_version: 7f3863fb77e23b88
-    inputs:
-      label: 'User account menu'
-      label_display: '0'
-      level: 1
-      depth: 1
-      expand_all_items: false
-  -
-    uuid: 58ad4f6e-f549-4d98-b88a-0e39c099c630
-    component_id: block.system_breadcrumb_block
-    component_version: cec23aa503e2a02f
-    inputs:
-      label: Breadcrumbs
-      label_display: '0'
-  -
     uuid: 32a28124-e36c-4be7-9a56-c07555e30f7f
     component_id: block.help_block
     component_version: 620979b5a309a407
-    inputs:
-      label: Help
-      label_display: '0'
-  -
-    uuid: 818a6d5f-5a15-4726-a209-bdb3123464a8
-    component_id: block.system_menu_block.main
-    component_version: 6fcbe14a0547fc91
-    inputs:
-      label: 'Main navigation'
-      label_display: '0'
-      level: 1
-      depth: 2
-      expand_all_items: true
+    inputs: '{"label":"Help","label_display":"0"}'
   -
     uuid: 235fdc57-cd44-49fd-a302-fb86ae662ba6
     component_id: block.system_messages_block
     component_version: b92f802cf68eb83e
-    inputs:
-      label: 'Status messages'
-      label_display: '0'
-  -
-    uuid: 3dce600e-6087-4844-9051-6188cfff8b2b
-    component_id: block.page_title_block
-    component_version: 62af221149ae4887
-    inputs:
-      label: 'Page title'
-      label_display: '0'
-  -
-    uuid: efa9fb57-904b-41af-816e-1006d09a6c07
-    component_id: block.system_powered_by_block
-    component_version: 3332388cade78d20
-    inputs:
-      label: 'Powered by Drupal'
-      label_display: '0'
+    inputs: '{"label":"Status messages","label_display":"0"}'
   -
     uuid: 0854d0d9-7550-4426-933e-ba21a83b1b52
     component_id: block.local_actions_block
     component_version: 5400750e38fff980
-    inputs:
-      label: 'Primary admin actions'
-      label_display: '0'
+    inputs: '{"label":"Primary admin actions","label_display":"0"}'
   -
     uuid: 5ad94aee-4f14-4c8f-a93c-46b43858ad71
     component_id: block.local_tasks_block
     component_version: 7ce07cbe2a7fa7ce
-    inputs:
-      label: 'Primary tabs'
-      label_display: '0'
-      primary: true
-      secondary: false
-  -
-    uuid: 4160c4f7-8bbc-4052-b208-212930f8e782
-    component_id: block.search_form_block
-    component_version: a70dc9055799da70
-    inputs:
-      label: 'Search form (narrow)'
-      label_display: '0'
-      page_id: null
-  -
-    uuid: 1c6e3b82-3b35-4878-bab1-1423347ec7d6
-    component_id: block.search_form_block
-    component_version: a70dc9055799da70
-    inputs:
-      label: 'Search form (wide)'
-      label_display: '0'
-      page_id: null
+    inputs: '{"label":"Primary tabs","label_display":"0","primary":true,"secondary":false}'
   -
     uuid: 2e2ab69c-9dcc-4af7-8ebe-3f9713de98fa
     component_id: block.local_tasks_block
     component_version: 7ce07cbe2a7fa7ce
-    inputs:
-      label: 'Secondary tabs'
-      label_display: '0'
-      primary: false
-      secondary: true
+    inputs: '{"label":"Secondary tabs","label_display":"0","primary":false,"secondary":true}'
   -
-    uuid: 42bb6415-9c83-4b3f-b98f-a5f795a9b0a5
-    component_id: block.system_branding_block
-    component_version: 247a23298360adb2
-    inputs:
-      label: 'Site branding'
-      label_display: '0'
-      use_site_logo: true
-      use_site_name: true
-      use_site_slogan: true
+    uuid: 2f3b4001-5ce5-4729-b334-030307a249d6
+    component_id: sdc.internal_sdc.header-basic
+    component_version: 5601cc833529ee48
+    inputs: '{"maxWidth":"contained","backgroundColor":"white","scrolledBackgroundColor":"white","logoColorMode":"original","logoScrolledColorMode":"original","logoSize":"medium","navigationAlignment":"right","navigationLinkColor":"primary","navigationScrolledLinkColor":"primary","scrollThreshold":100}'

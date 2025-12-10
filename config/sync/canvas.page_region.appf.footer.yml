@@ -2,9 +2,18 @@ uuid: 8216c1e4-d43b-437b-8822-bca528a6ba34
 langcode: en
 status: true
 dependencies:
+  config:
+    - canvas.component.sdc.internal_sdc.footer-standard
+  module:
+    - options
   theme:
     - appf
 id: appf.footer
 region: footer
 theme: appf
-component_tree: {  }
+component_tree:
+  -
+    uuid: e47bc77f-7fe6-48fb-aabb-327ee069bc2b
+    component_id: sdc.internal_sdc.footer-standard
+    component_version: 804b77cc81649a30
+    inputs: '{"logoColorMode":"white","logoSize":"medium","facebookUrl":"https:\/\/facebook.com\/yourpage","instagramUrl":"https:\/\/instagram.com\/yourprofile","xUrl":"https:\/\/x.com\/yourhandle","linkedinUrl":"https:\/\/linkedin.com\/in\/yourprofile","youtubeUrl":"https:\/\/youtube.com\/@yourchannel","socialIconSize":"normal","socialIconColor":"light","socialIconStyle":"outline","socialSpacing":"normal","menuSpacing":"normal","menuLinkSize":"normal","menuAlignment":"left","companyName":"Acme Corporation","backgroundColor":"dark","textColor":"auto","linkColor":"light","padding":"large","borderColor":"gray-300","copyrightAlignment":"center"}'
