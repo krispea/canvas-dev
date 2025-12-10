@@ -4,15 +4,16 @@
 
 ### Mi a Canvas?
 - Drupal **page builder** modul - vizuális oldalépítő
-- **2024. december 4-én** jelent meg az **1.0.0 stable** verzió
+- **2025. december 4-én** jelent meg az **1.0.0 stable** verzió
 - Lehetővé teszi, hogy tartalomszerkesztők kód írása nélkül építsenek oldalakat
-- Single Directory Components (SDC) alapú - Drupal core technológia
+- Single Directory Components (SDC) alapú - Drupal core technológia 10.2-től
+- UI Pattern modul
 
 ### Miért fontos ez nekünk?
 - Gyorsabb fejlesztés: komponenseket egyszer írunk meg, újrahasználhatók
-- Tartalomszerkesztők önállóan tudnak dolgozni
+- Tartalomszerkesztők önállóan tudnak dolgozni, oldalakat létrehozni
 - Konzisztens design a teljes oldalon
-- Kód és tartalom szétválasztása
+- Kód és tartalom szétválasztása - Backend és a frontend párhuazomas tud haladni
 
 ---
 
@@ -21,13 +22,16 @@
 ### Architektúra
 - **Components**: SDC komponensek (Twig + YAML + opcionális CSS/JS)
 - **Canvas Pages**: Entitások, amik komponensekből állnak össze
-- **Props**: Komponens paraméterek (JSON Schema alapú)
-- **Slots**: Helyek, ahová más komponensek beágyazhatók
+- **Code Components**: Canvas Editorban szerkeszthető illetve fejleszthető React komponensek, Tailwindet használ, classok működnek, CLI tool
+- **Props**: Komponens paraméterek (JSON Schema alapú) - component.yml-ben definiáljuk őket, {{ props_name }} rendereljük a twigben
+- **Slots**: Helyek, ahová más komponensek beágyazhatók - meghatározható a struktúra ahová bármilyen tartalmat be tudunk ágyazni --> rugalmasságot ad
+   {% block slots_name %}{{ slots_name }}{% endblock %} függvénnyel kell kirenderelni a twigben
 
 ### Canvas Editor
 - React + TypeScript alapú UI
 - Drag & drop komponens elhelyezés
 - Valós idejű előnézet
+- Responsive megjelenítés
 - Prop szerkesztés vizuális felületen
 
 ### Demo: Canvas editor bemutatása
@@ -71,7 +75,8 @@ tabs-container/
 ```
 
 ### Konvenciók
-1. **Alpine.js** interaktivitáshoz (nem egyedi JS)
+1. **Alpine.js** interaktivitáshoz (nem egyedi JS) - JavaScript-keretrendszer, amelyet arra terveztek, hogy kis komponenslogikát és interakciót vigyen a HTML-be anélkül, hogy nagyobb keretrendszerek (pl. Vue vagy React) teljes komplexitását be kellene vezetni.
+A HTML-ben elhelyezett, x- prefixű attribútumokkal működik
 2. **Tailwind CSS** stylinghoz (safelist!)
 3. **Props** minden testreszabható értékhez
 4. **Slots** beágyazható tartalomhoz

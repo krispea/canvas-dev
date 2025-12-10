@@ -15,7 +15,7 @@
    ATOMS - Import complex atomic components
    ============================================ */
 
-@import '../../../components/atoms/blockquote/blockquote.css';
+/* No complex atom components with @apply directives yet */
 
 /* ============================================
    MOLECULES - Import complex molecular components

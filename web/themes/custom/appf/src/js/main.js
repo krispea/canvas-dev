@@ -1,16 +1,9 @@
 /**
  * @file
  * Main JavaScript entry point for APPF theme.
+ *
+ * Note: Alpine.js is loaded from internal_sdc module (with collapse plugin).
  */
-
-// Import Alpine.js for lightweight interactivity
-import Alpine from 'alpinejs';
-
-// Make Alpine available globally
-window.Alpine = Alpine;
-
-// Initialize Alpine
-Alpine.start();
 
 /**
  * Drupal behaviors for theme initialization.

@@ -8,3 +8,4 @@ global:
   dependencies:
     - core/drupal
     - core/once
+    - internal_sdc/global
