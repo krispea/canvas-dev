@@ -1,0 +1,22 @@
+uuid: efa9fb57-904b-41af-816e-1006d09a6c07
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - appf
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: appf_powered
+theme: appf
+region: content
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 3dce600e-6087-4844-9051-6188cfff8b2b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - appf
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: appf_page_title
+theme: appf
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

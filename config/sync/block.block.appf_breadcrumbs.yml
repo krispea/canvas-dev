@@ -1,0 +1,22 @@
+uuid: 58ad4f6e-f549-4d98-b88a-0e39c099c630
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - appf
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: appf_breadcrumbs
+theme: appf
+region: content
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

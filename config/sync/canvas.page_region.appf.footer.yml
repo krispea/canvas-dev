@@ -1,0 +1,10 @@
+uuid: 8216c1e4-d43b-437b-8822-bca528a6ba34
+langcode: en
+status: true
+dependencies:
+  theme:
+    - appf
+id: appf.footer
+region: footer
+theme: appf
+component_tree: {  }
