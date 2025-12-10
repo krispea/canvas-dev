@@ -1,0 +1,85 @@
+uuid: 8f3eb7db-a7f7-449b-a5e5-83d8c3fe6ac8
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: d38c2200baece489
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        content:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Sample Heading'
+          expression: ℹ︎string␟value
+        level:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: h1
+          expression: ℹ︎list_string␟value
+        textAlignment:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: left
+          expression: ℹ︎list_string␟value
+        textColor:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: primary
+          expression: ℹ︎list_string␟value
+        textWeight:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: bold
+          expression: ℹ︎list_string␟value
+        spacing:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: none
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: Heading
+id: sdc.internal_sdc.heading
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:heading'
+category: Typography

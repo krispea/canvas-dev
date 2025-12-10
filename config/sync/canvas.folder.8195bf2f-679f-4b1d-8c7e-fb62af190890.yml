@@ -1,0 +1,14 @@
+uuid: 8195bf2f-679f-4b1d-8c7e-fb62af190890
+langcode: en
+status: true
+dependencies: {  }
+name: Typography
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.blockquote
+  - sdc.internal_sdc.heading
+  - sdc.internal_sdc.ordered-list
+  - sdc.internal_sdc.paragraph
+  - sdc.internal_sdc.text
+  - sdc.internal_sdc.unordered-list

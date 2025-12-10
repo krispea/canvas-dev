@@ -1,0 +1,55 @@
+uuid: 0b8c53ab-e32c-42fb-a688-04e293e1784b
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: 3c480edaf5fde671
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Frequently Asked Questions'
+          expression: ℹ︎string␟value
+        spacing:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: normal
+          expression: ℹ︎list_string␟value
+        containerStyle:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: 'Accordion Items'
+          description: 'Drag accordion-item components here'
+label: 'Accordion Container'
+id: sdc.internal_sdc.accordion-container
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:accordion-container'
+category: Interactive

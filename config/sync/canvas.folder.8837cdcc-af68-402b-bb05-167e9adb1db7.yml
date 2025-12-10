@@ -1,0 +1,16 @@
+uuid: 8837cdcc-af68-402b-bb05-167e9adb1db7
+langcode: en
+status: true
+dependencies: {  }
+name: Interactive
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.accordion-container
+  - sdc.internal_sdc.accordion-item
+  - sdc.internal_sdc.alert
+  - sdc.internal_sdc.button
+  - sdc.internal_sdc.link
+  - sdc.internal_sdc.tab-item
+  - sdc.internal_sdc.tab-item-text
+  - sdc.internal_sdc.tabs-container

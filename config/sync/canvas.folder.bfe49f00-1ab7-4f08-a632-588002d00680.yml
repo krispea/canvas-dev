@@ -1,0 +1,9 @@
+uuid: bfe49f00-1ab7-4f08-a632-588002d00680
+langcode: en
+status: true
+dependencies: {  }
+name: Form
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.search-box

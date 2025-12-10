@@ -25,6 +25,7 @@ module:
   help: 0
   history: 0
   image: 0
+  internal_sdc: 0
   link: 0
   media: 0
   media_library: 0
@@ -36,13 +37,16 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  sdc: 0
   sdc_test_all_props: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
@@ -52,5 +56,4 @@ theme:
   olivero: 0
   claro: 0
   canvas_stark: 0
-  appf: 0
 profile: standard

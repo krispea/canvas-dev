@@ -1,0 +1,13 @@
+uuid: c8971d53-2c45-42fd-b1c4-442237d77ac6
+langcode: en
+status: true
+dependencies: {  }
+name: Container
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.flex-container
+  - sdc.internal_sdc.four-column-container
+  - sdc.internal_sdc.one-column-container
+  - sdc.internal_sdc.three-column-container
+  - sdc.internal_sdc.two-column-container

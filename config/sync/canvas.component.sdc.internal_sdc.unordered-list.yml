@@ -1,0 +1,96 @@
+uuid: f1c0ece2-be11-4957-8bda-72a82784df72
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: 4723a102ec8d7609
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        items:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Responsive web design'
+            -
+              value: 'Modern JavaScript frameworks'
+            -
+              value: 'Accessible HTML5'
+          expression: ℹ︎string␟value
+        listStyle:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: disc
+          expression: ℹ︎list_string␟value
+        spacing:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: normal
+          expression: ℹ︎list_string␟value
+        textColor:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: black
+          expression: ℹ︎list_string␟value
+        markerColor:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: black
+          expression: ℹ︎list_string␟value
+        fontSize:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        inline:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Unordered List'
+id: sdc.internal_sdc.unordered-list
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:unordered-list'
+category: Typography

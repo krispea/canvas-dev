@@ -1,0 +1,20 @@
+uuid: e21910ab-d946-42f7-b5fa-edf6a39805a0
+langcode: en
+status: true
+dependencies: {  }
+name: Content
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.card-basic
+  - sdc.internal_sdc.card-flexible
+  - sdc.internal_sdc.card-horizontal
+  - sdc.internal_sdc.card-icon
+  - sdc.internal_sdc.card-icon-simple
+  - sdc.internal_sdc.card-image
+  - sdc.internal_sdc.cta-basic
+  - sdc.internal_sdc.hero-basic
+  - sdc.internal_sdc.hero-media
+  - sdc.internal_sdc.hero-split
+  - sdc.internal_sdc.media-text
+  - sdc.internal_sdc.media-text-stacked

@@ -1,0 +1,12 @@
+uuid: 7d1a593a-689d-40ae-82bb-a2c5f41050f7
+langcode: en
+status: true
+dependencies: {  }
+name: Media
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.icon
+  - sdc.internal_sdc.image
+  - sdc.internal_sdc.video
+  - sdc.internal_sdc.video-embed

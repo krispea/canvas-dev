@@ -1,0 +1,42 @@
+uuid: 84684857-3b94-4b7c-88e2-082aa7dd1467
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: '9940311311e01549'
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        colorMode:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: original
+          expression: ℹ︎list_string␟value
+        size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: medium
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: Logo
+id: sdc.internal_sdc.logo
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:logo'
+category: Decorative

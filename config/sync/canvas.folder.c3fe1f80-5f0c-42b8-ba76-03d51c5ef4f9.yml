@@ -1,0 +1,15 @@
+uuid: c3fe1f80-5f0c-42b8-ba76-03d51c5ef4f9
+langcode: en
+status: true
+dependencies: {  }
+name: Layout
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.footer-basic
+  - sdc.internal_sdc.footer-minimal
+  - sdc.internal_sdc.footer-standard
+  - sdc.internal_sdc.header-basic
+  - sdc.internal_sdc.header-centered
+  - sdc.internal_sdc.header-split
+  - sdc.internal_sdc.header-topbar

@@ -1,4 +1,4 @@
-uuid: 51c8fcdf-ed3e-42e6-b6ab-6a719529dcd0
+uuid: a5b5b921-f411-484e-9330-eab4e1b0d968
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     module:
       - canvas
 _core:
-  default_config_hash: DqrSQONa0p-NEUlGCA3Gjh0CMoJy7CV34j6zT7rf3gw
+  default_config_hash: _swHftozDbyDz99i7eT_zM_4FrFpu7uifMseaG-05ok
 id: canvas_pages
 label: Pages
 module: views
@@ -567,59 +567,6 @@ display:
     position: 2
     display_options:
       fields:
-        edit_canvas_page:
-          id: edit_canvas_page
-          table: canvas_page
-          field: edit_canvas_page
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: canvas_page
-          plugin_id: entity_link_edit
-          label: Actions
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: edit
-          output_url_as_text: true
-          absolute: true
         title:
           id: title
           table: canvas_page_field_data
@@ -674,7 +621,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -893,6 +840,57 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        operations:
+          id: operations
+          table: canvas_page
+          field: operations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: canvas_page
+          plugin_id: entity_operations
+          label: Operations
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          destination: false
       pager:
         type: full
         options:

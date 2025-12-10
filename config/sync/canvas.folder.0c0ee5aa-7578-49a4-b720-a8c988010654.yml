@@ -1,0 +1,12 @@
+uuid: 0c0ee5aa-7578-49a4-b720-a8c988010654
+langcode: en
+status: true
+dependencies: {  }
+name: Decorative
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.badge
+  - sdc.internal_sdc.divider
+  - sdc.internal_sdc.logo
+  - sdc.internal_sdc.social-icons

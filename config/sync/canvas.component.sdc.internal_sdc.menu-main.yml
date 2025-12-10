@@ -1,0 +1,53 @@
+uuid: 1cfb721c-716c-4663-b858-40393d42d0e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: 762638faf8f0dc23
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        mobile_breakpoint:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: lg
+          expression: ℹ︎list_string␟value
+        alignment:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: right
+          expression: ℹ︎list_string␟value
+        link_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: primary
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Menu Main'
+id: sdc.internal_sdc.menu-main
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:menu-main'
+category: Navigation

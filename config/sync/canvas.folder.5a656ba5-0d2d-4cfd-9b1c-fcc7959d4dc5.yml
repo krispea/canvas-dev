@@ -1,0 +1,12 @@
+uuid: 5a656ba5-0d2d-4cfd-9b1c-fcc7959d4dc5
+langcode: en
+status: true
+dependencies: {  }
+name: Navigation
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.internal_sdc.menu-dropdown
+  - sdc.internal_sdc.menu-footer
+  - sdc.internal_sdc.menu-list
+  - sdc.internal_sdc.menu-main

@@ -1,0 +1,54 @@
+uuid: 14cba9a4-9dc3-4f57-9a1b-010c03cefef3
+langcode: en
+status: true
+dependencies:
+  module:
+    - internal_sdc
+    - options
+active_version: 1ba3e4a845b798f7
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Tab 1'
+          expression: ℹ︎string␟value
+        icon:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: home
+          expression: ℹ︎list_string␟value
+        disabled:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Tab Content'
+          description: 'Content shown when this tab is active'
+label: 'Tab Item'
+id: sdc.internal_sdc.tab-item
+provider: internal_sdc
+source: sdc
+source_local_id: 'internal_sdc:tab-item'
+category: Interactive
